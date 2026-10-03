@@ -4,16 +4,17 @@ using namespace std;
 int main(){
     int n;
     cin>>n;
-    int ans=0;
+    int group=0;
+    string prev, curr;
     for(int i=0;i<n;i++){
-        int pi, qi;
-        cin>>pi>>qi;
+        cin>>curr;
 
-        if(pi < qi+2){
-            ans++;
+        if(curr!=prev){
+            group++;
         }
+        prev=curr;
     }
-    cout<<ans<<endl;
+    cout<<group;
 
     return 0;
 }

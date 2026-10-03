@@ -9,7 +9,7 @@ int main(){
         int pi, qi;
         cin>>pi>>qi;
 
-        if(pi < qi+2){
+        if(qi - pi >= 2){
             ans++;
         }
     }
